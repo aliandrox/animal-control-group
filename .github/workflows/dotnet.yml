@@ -32,7 +32,5 @@ jobs:
           && sudo mv chromedriver /usr/local/bin/chromedriver \
           && sudo chmod +x /usr/local/bin/chromedriver \
           && chromedriver --version
-    - name: setup-chromedriver
-      uses: nanasess/setup-chromedriver@v1.0.1
     - name: Test
       run: dotnet test --no-build --verbosity normal
